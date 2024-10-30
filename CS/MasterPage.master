@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="CS_Forms_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://use.fontawesome.com/1aec70dd21.js"></script>
+
+    <meta content="Jay Shree Chamunda Chemicals is one of the leading Manufacturers & Exporter of the Triple Refined Free Flow Iodized Salt & Industrial Grade Salt, having well equipped administrative office as very prominent location in Gandhidham (Kutch) near to India's largest port Kandla & Mundra. And Incorporated in the year 1969 by Mr.  Teja Mema Ahir one of the prominent name in SALT INDUSTRIES of Gujarat who started this business around 50 years ago." name="description" />
+
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+
+    <link href="../Images/Favicon/JSCC.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="Template/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="Template/assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="Template/assets/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        .textstyle {
+            background: red;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- ======= Header ======= -->
+            <header id="header" class="fixed-top d-flex align-items-center">
+                <div class="container d-flex align-items-center">
+
+                    <asp:ContentPlaceHolder ID="ContentNavigatonMenu" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <!-- .nav-menu -->
+
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- ======= Footer ======= -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 text-lg-left text-center">
+                            <div class="copyright">
+                                &copy; Copyright <strong>JSC Chemicals</strong>. All Rights Reserved
+                            </div>
+                            <div class="credits">
+                                <!-- All the links in the footer should remain intact. -->
+                                <!-- You can delete the links only if you purchased the pro version. -->
+                                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+                                Designed & Developed by <span style="color: red">H2M IT SOLUTIONS </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <%-- <div style="text-align:right">
+                               
+                                 
+                                <img src="../Certificates/HALAL_Icon_Re.jpg" width="50px" title="HALAL Certification"/>
+                                <img src="../Certificates/ISO_Icon_Re.jpg" width="50px" title="ISO 9001:2015"/>
+                                <img src="../Certificates/HACCP_Re.jpg" width="60px" style="margin-top:2px" title="HACCP Certification"/>
+                            </div>--%>
+                            <asp:ContentPlaceHolder ID="ContentFooterNav" runat="server">
+                            </asp:ContentPlaceHolder>
+
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+            <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+          <%--  <a href="https://api.whatsapp.com/send?phone=919638663663&text=Hi%there!%i%27m%interested%to%know%more%about%JSCC." class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>--%>
+
+              <a href="https://api.whatsapp.com/send?phone=919638663663&text=Hi%20there!%20i%27m%20interested%20to%20know%20more%20about%20JSCC." class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>
+            <!-- Vendor JS Files -->
+            <script src="Template/assets/vendor/jquery/jquery.min.js"></script>
+            <script src="Template/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="Template/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="Template/assets/vendor/php-email-form/validate.js"></script>
+            <script src="Template/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+            <script src="Template/assets/vendor/counterup/counterup.min.js"></script>
+            <script src="Template/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+            <script src="Template/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="Template/assets/vendor/venobox/venobox.min.js"></script>
+            <script src="Template/assets/vendor/aos/aos.js"></script>
+
+
+            <!-- Template Main JS File -->
+            <script src="Template/assets/js/main.js"></script>
+        </div>
+    </form>
+</body>
+</html>
